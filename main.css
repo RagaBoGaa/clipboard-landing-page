@@ -220,21 +220,25 @@ footer .bottom-logo img {
   max-width: 50px;
 }
 
-footer ul.list {
+footer nav div.links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 2rem;
 }
 
-footer ul li {
+footer nav div.links * div {
+  margin-bottom: 2rem;
+}
+
+footer div a {
   margin: 2rem;
-  cursor: pointer;
 }
 
-footer ul li {
+footer div a {
   color: var(--Dark-Grayish-Blue);
 }
-footer ul li:hover {
+footer div a:hover {
   color: var(--Strong-Cyan);
 }
 
@@ -357,18 +361,32 @@ footer .social svg:hover {
       ===========   */
   footer {
     padding: 4rem;
+    flex-direction: column;
   }
-  footer ul.list {
+  footer nav div.links {
     text-align: center;
+    flex-direction: column;
   }
 
-  footer div:nth-child(2) {
+  footer nav div.links * div {
+    margin-bottom: 2rem;
+  }
+
+  footer div a {
+    margin: 1rem;
+  }
+
+  nav {
+    margin-bottom: 4rem;
+  }
+
+  /* footer div:nth-child(2) {
     margin-top: -2rem;
   }
   footer div:nth-child(3) {
     margin-top: -2rem;
     margin-bottom: 5rem;
-  }
+  } */
   footer .social {
     margin: 0;
   }
