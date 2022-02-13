@@ -1,0 +1,374 @@
+/* ======= Variables ======= */
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* ======= Reset ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/*  =======  Global Rules ======= */
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* =======  Utilities ======= */
+
+/*  ===========
+      Container
+    =========== */
+.container {
+  width: 610px;
+  margin: 0 auto;
+}
+
+/*  ===========
+      Heading
+    =========== */
+.heading {
+  font-size: 3.93rem;
+  color: var(--Dark-Grayish-Blue);
+}
+.sub-heading {
+  color: var(--Grayish-Blue);
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.small-heading {
+  color: var(--Dark-Grayish-Blue);
+}
+.small-sub-heading {
+  color: var(--Grayish-Blue);
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+/*  ===========
+      Buttons
+    =========== */
+button {
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  margin: 40px 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 1px;
+}
+button.green {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0px 10px 13px 0px rgb(38 186 64 / 20%),
+    0px 3px 0px rgb(20 166 141);
+}
+
+button.blue {
+  background-color: var(--Light-Blue);
+  box-shadow: 0px 10px 13px 0px rgba(97 115 255 / 20%),
+    0px 3px 0px rgb(67 90 245);
+}
+
+button.green:hover,
+button.blue:hover {
+  opacity: 0.8;
+}
+/* ======= End Utilities ======= */
+
+/* ======= Header ======= */
+header {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: url(images/bg-header-desktop.png) no-repeat top;
+  background-size: contain;
+  text-align: center;
+}
+
+header .logo {
+  padding: 125px 0 40px;
+}
+
+/* ======= Section One ======= */
+section .main-title .heading {
+  font-size: 3.2rem;
+  text-align: center;
+}
+section .main-title .sub-heading {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+section.section-one .wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 7rem;
+  gap: 2rem;
+}
+
+section.section-one .wrapper .img-holder img {
+  max-width: 100%;
+  left: -10%;
+  position: relative;
+}
+
+section.section-one .wrapper .small-title {
+  width: 300px;
+}
+
+section.section-one .wrapper .small-title > div:first-child {
+  margin-bottom: 5rem;
+}
+section.section-one .wrapper .small-title > div:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+/* ======= Section Two ======= */
+section.section-two {
+  padding-top: 14.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.section-two .main-title {
+  padding-bottom: 9rem;
+}
+
+section.section-two .img {
+  width: 100%;
+}
+
+section.section-two .img img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ======= Section Three ======= */
+section.section-three .items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 5rem;
+  text-align: center;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+section.section-three .items .item {
+  width: calc(100% / 4);
+}
+
+section.section-three .items .item .icon {
+  margin-bottom: 3rem;
+}
+
+/* ======= Section Four ======= */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 5rem;
+  gap: 7rem;
+}
+
+/* ======= Section Five ======= */
+section.section-five {
+  padding-bottom: 15rem;
+}
+section.section-five .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background: #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+footer .bottom-logo img {
+  max-width: 50px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 2rem;
+}
+
+footer ul li a {
+  color: var(--Dark-Grayish-Blue);
+}
+footer ul li a:hover {
+  color: var(--Strong-Cyan);
+}
+
+footer .social svg {
+  fill: #4c545c;
+  margin: 0 2rem;
+}
+footer .social svg:hover {
+  fill: var(--Strong-Cyan);
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: #4c545c;
+}
+
+.attribution a:hover {
+  color: var(--Strong-Cyan);
+}
+
+/*  =================================
+      Media Screen for Mobile 375px
+    =================================
+*/
+@media (max-width: 767px) {
+  header {
+    background: url(images/bg-header-mobile.png) no-repeat top;
+  }
+  .container {
+    max-width: 350px;
+    padding: 0 2rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    margin-top: 15px;
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  button.blue {
+    margin-top: 3rem;
+  }
+
+  /*  ===========
+      Section-One
+      ===========   */
+  section.section-one {
+    margin-top: 20rem;
+  }
+
+  section .main-title .heading {
+    font-size: 2.7rem;
+  }
+  section .main-title .sub-heading {
+    font-size: 1.5rem;
+  }
+
+  section.section-one .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section.section-one .wrapper .img-holder img {
+    left: 0%;
+    padding: 0 2rem;
+  }
+
+  .small-title {
+    margin-top: 3rem;
+  }
+  .small-sub-heading {
+    margin-top: 15px;
+    line-height: 1.6;
+    font-size: 1.6rem;
+  }
+
+  /*  ===========
+      Section-Two
+      ===========   */
+  section.section-two {
+    padding-top: 20rem;
+  }
+
+  section.section-two .main-title {
+    padding-bottom: 5rem;
+  }
+
+  /*  ===========
+      Section-Three
+      ===========   */
+  section.section-three {
+    margin-top: 5rem;
+  }
+
+  section.section-three .items {
+    margin-top: 10rem;
+    padding: 0 2rem;
+  }
+
+  section.section-three .items .item {
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  /*  ===========
+        Footer
+      ===========   */
+  footer {
+    padding: 4rem;
+  }
+  footer ul {
+    text-align: center;
+  }
+
+  footer div:nth-child(2) {
+    margin-top: -2rem;
+  }
+  footer div:nth-child(3) {
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+  }
+  footer .social {
+    margin: 0;
+  }
+}
