@@ -194,7 +194,9 @@ article {
   padding: 15rem 5rem;
   gap: 7rem;
 }
-
+article h4 {
+  display: none;
+}
 /* ======= Section Five ======= */
 section.section-five {
   padding-bottom: 15rem;
