@@ -361,10 +361,10 @@ footer .social svg:hover {
     text-align: center;
   }
 
-  footer ul:nth-child(2) {
+  footer div:nth-child(2) {
     margin-top: -2rem;
   }
-  footer ul:nth-child(3) {
+  footer div:nth-child(3) {
     margin-top: -2rem;
     margin-bottom: 5rem;
   }
