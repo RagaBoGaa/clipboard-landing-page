@@ -228,12 +228,13 @@ footer ul.list {
 
 footer ul li {
   margin: 2rem;
+  cursor: pointer;
 }
 
-footer ul li a {
+footer ul li {
   color: var(--Dark-Grayish-Blue);
 }
-footer ul li a:hover {
+footer ul li:hover {
   color: var(--Strong-Cyan);
 }
 
